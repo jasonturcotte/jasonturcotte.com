@@ -1,0 +1,22 @@
+<div id="footerwrapper" class="clearfix">
+	<div id="footercol1" class="grid_4 alpha omega addlinefooter">
+		<h2>RECENT BLOG POSTS</h2>
+		<ul>
+		{exp:channel:entries channel="blog" limit="3" dynamic="off"}
+		<li class="bloghometitle"><a href="{title_permalink='blog/article'}">{title}</a></li>
+		{/exp:channel:entries}
+		<ul>
+	</div>
+	<div id="footercol1" class="grid_4 alpha omega addlinefooter">
+		<h2>FOLLOW US ON TWITTER</h2>
+		<p>We're on the twitter and you can follow us there!</p>
+		<p><a href="http://twitter.com/turcottedata"><span class="twitterlink">@turcottedata</span></a></p>
+	</div>
+	<div id="footercol1" class="grid_4 alpha omega">
+		<h2>CONTACT AND CONNECT</h2>
+		<p style="margin-bottom:10px;">turcotte data & design<br />po box 1372<br />ware, ma 01082<br />(413) 303-1533<br /><a href="mailto:info@turcottedata.com">info@turcottedata.com</a></p>
+	</div>
+</div><!-- end footerwrapper -->
+<div id="copyright" class="grid_12">
+<p>&copy; 2012 - All Rights Reserved, Turcotte Data & Design</p>
+</div>

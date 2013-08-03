@@ -1,0 +1,141 @@
+/*-----------------------------
+RESET STYLES
+-----------------------------*/
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{
+	margin:0;
+	padding:0;
+	-webkit-text-size-adjust:none; /* This stops the iPhone from automatically changing the size of the text when you flip the phone */
+	}
+body{
+	font-size: 62.5%; /* 62.5% means 1em = 10px */
+	}
+ul, li, ol, dl, dd, dt{
+	list-style:none;
+	padding:0;
+	margin:0;
+	}
+a{
+	text-decoration:none;
+	}
+ 
+/*-----------------------------
+	SITE SPECIFIC STYLES
+-----------------------------*/
+
+body{
+	background:#fff000;
+	font-family: Helvetica; /* Helvetica is on the iPhone already, so you may as well take advantage */
+	color:#999;
+	}
+p{
+	font-size:12px;
+	padding-bottom:8px;
+	}
+a{
+	color:#fff000;
+	text-decoration:none;
+	}
+
+/*-----------------------------
+	HEADINGS
+-----------------------------*/
+
+h1{
+	display:block;
+	width:112px;
+	height:41px;
+	background-image:url(images/logo.gif);
+	text-indent:-5000px;
+	}
+
+/*-----------------------------
+	BASIC LAYOUT
+-----------------------------*/
+
+#page_wrapper{
+	padding-top:0;
+	background:#000 url(images/page_background.gif) repeat-x;
+	overflow:auto;
+	}
+
+/*-----------------------------
+	ORIENTATION CLEVERNESS
+-----------------------------*/
+
+#content_left,
+#content_right,
+#content_normal,
+#content_flipped{
+	display:none;
+	}
+.show_normal,
+.show_flipped{
+	width:320px;
+	}
+.show_left,
+.show_right{
+	width:480px;
+	}
+
+.show_left #content_left,
+.show_right #content_right,
+.show_normal #content_normal,
+.show_flipped #content_flipped{
+	display:block;
+	}
+
+#navWrapper {
+	background: #ff6418 url(img/iphone/navBack.png) top left repeat-x;
+	height: 34px;
+	width: 100%;
+	}
+	
+#nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 34px;
+	display: inline;
+	overflow: hidden;
+	clear: right;
+	
+	}
+	
+#nav li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	}
+
+#nav a {
+	float: left;
+	padding: 34px 0 0 0;
+	overflow: hidden;
+	height: 0px !important; 
+	height /**/:34px; /* for IE5/Win */
+	}
+	
+#nav a:hover {
+	background-position: 0 -34px;
+	}
+
+#nav a:active, #nav a.selected {
+	background-position: 0 -34px;
+	}
+	
+#tsolutions a  {
+	width: 84px;
+	background: url(img/iphone/solutions.png) top left no-repeat;
+	}
+
+#tportfolio a  {
+	width: 82px;
+	background: url(img/iphone/portfolio.png) top left no-repeat;
+	}
+	
+#tcontact a  {
+	width: 77px;
+	background: url(img/iphone/contact.png) top left no-repeat;
+	}

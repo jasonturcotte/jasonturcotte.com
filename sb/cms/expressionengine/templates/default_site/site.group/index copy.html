@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>Western Massachusetts Website Design Company | Turcotte Data & Design</title>
+
+		<meta name="description" content="Website design, branding and technology solutions for Western Massachusetts and the World!" />
+	
+		<link  href="http://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/css/960.css" />
+		<link rel="stylesheet" type="text/css" href="/css/main_css.css"  />
+		<link rel="stylesheet" type="text/css" href="/css/superfish.css" />
+		<link rel="shortcut icon" type="image/ico" href="{site_url}favicon.ico" />
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+		<script src="/js/jquery.cycle.js" type="text/javascript"></script>
+		<script src="/js/superfish.js" type="text/javascript"></script>
+		<script src="/js/hoverIntent.js" type="text/javascript"></script>
+		<script src="/js/easySlider1.7.js" type="text/javascript"></script>
+		
+		<!--// initialise Superfish -->
+		<script type="text/javascript"> 
+		    $(document).ready(function(){ 
+		        $("ul.sf-menu").superfish({
+		        });
+		    });	 
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){	
+				$("#slider").easySlider({
+					auto: true, 
+					continuous: true,
+					controlsShow: false,
+					pause: 5000
+				});
+			});	
+		</script>
+
+	<script type="text/javascript">
+		
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-68942-9']);
+			_gaq.push(['_trackPageview']);
+			
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		
+		</script>
+	</head>
+	<body>
+		<header>
+		<div id="headerwrapper">
+			<div id="header" class="container_12">
+					<h1>Western Massachusetts website design and computer support</h1>
+					<a href="{homepage}"><img src="/images/tddlogo.png" alt="turcotte data &amp; design" class="grid_4"/></a>
+					<img src="/images/phone.png" alt="call us" class="prefix_4 grid_1" /><h2>(413) 303-1533</h2>
+			</div><!-- end header -->
+		</div><!-- end headerwrapper -->
+			<div id="navbar">
+				<div class="container_12">
+					<nav>
+						{navbar}
+					</nav>
+				</div><!-- end container_12 -->
+			</div><!-- end navbar -->
+		</header>
+		<div id="slidewrapper">
+			<div id="slideHolder">
+				<div id="slider">
+					<ul>				
+						<li><a href="{path=web-design}"><img src="/images/slides/ptt.jpg" alt="Paint the Town" /></a></li>
+						<li><a href="{path=web-design}"><img src="/images/slides/changehappens.jpg" alt="Css Template Preview" /></a></li>
+						<li><a href="{path=web-design}"><img src="/images/slides/insight.jpg" alt="Css Template Preview" /></a></li>
+						<li><a href="{path=web-design}"><img src="/images/slides/spd.jpg" alt="Css Template Preview" /></a></li>
+						<li><a href="{path=web-design}"><img src="/images/slides/rjm.jpg" alt="Css Template Preview" /></a></li>			
+					</ul>	
+				</div><!-- end slider -->
+			</div><!-- end slider -->
+		</div><!-- end slidewrapper -->
+		<div id="clientwrapper">
+			<div class="container_12">
+			<h2>we help businesses solve their website design and technology problems</h2>
+			</div>
+		</div><!-- end clientwrapper -->
+		<div id="columnwrapper">
+		<div id="columns" class="container_12 clearfix">
+			<div id="col1" class="grid_6">
+				
+				<h2>website design &amp; development</h2>
+				<img src="/images/webdesign.jpg" alt="website and graphic design" style="padding-right: 60px;" />
+				<ul>
+					<li><a href="{path=web-design}">website design</a></li>
+					<li><a href="{path=web-design}">e-commerce website design</a></li>
+					<li><a href="{path=web-design}">content management systems</a></li>
+					<li><a href="{path=web-design}">social networking/media coaching</a></li>
+				</ul>
+			</div><!-- end col1 -->
+			<div id="col2" class="grid_6">
+				
+				<h2>technology solutions</h2>
+				<img src="/images/nsa.jpg" alt="technology solutions" style="padding-right: 60px;" />
+				<ul>
+					<li><a href="{path=computer-support}">computer support</a></li>
+					<li><a href="{path=computer-suppor}">server support</a></li>
+					<li><a href="{path=computer-suppor}">network security and firewalls</a></li>
+					<li><a href="{path=computer-suppor}">remote worker solutions</a></li>
+				</ul>
+			</div><!-- end col1 -->
+		
+		</div><!-- end columns -->
+		</div><!-- end columnwrapper -->
+		<footer>
+			{footer}
+		</footer>
+	</body>
+</html>

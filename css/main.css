@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+/* Turcotte Data & Designs */
+/* http://turcottedata.com */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+img {
+	border:0;
+}
+
+body {
+	line-height: 1;
+}
+
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset here */
+
+body {
+	background-color: black;
+	color: #d4dce8;
+	font-family: "News Cycle",Helvetica, Arial, sans-serif;
+	font-size: .97em;
+	line-height: 1.2em;
+	min-height: 675px;
+}
+
+.banner {
+	height: 73px;
+	width: 100%;
+	background: #002b45 url(../img/bannerbackground.jpg) repeat-x;
+	margin: 0;
+	padding: 0;
+	}
+	
+.bannerinner {
+	width: 960px;
+	min-height: 74px;
+	margin: 0 auto;
+	}
+
+#wrapper {
+	width: 960px;
+	min-height: 675px;
+	margin: 0 auto;
+	background: black url(../img/jasonbackground.jpg) top center no-repeat;
+}
+
+#content {
+	width: 490px;
+	background: rgba(0,0,0,0.5);
+	min-height: 675px;
+	}
+	
+#content a:link,
+#content a:visited {
+	color: #d7d7d7;
+	}
+	
+#content h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	color: white;
+	text-shadow: black 1px 1px 1px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 10px;
+}
+
+#content p {
+	color: white;
+	text-shadow: black 1px 1px 1px;
+	font-size: 1.25em;
+	line-height: 1.2;
+	font-family: "News Cycle",Helvetica, Arial, sans-serif;
+	margin-bottom: 1em;
+	padding: 10px;
+	}

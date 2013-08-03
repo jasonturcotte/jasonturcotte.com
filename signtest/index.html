@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title></title>
+		
+		<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+		
+		<script type="text/javascript">
+		
+			$(function(){
+
+			    var $quote = $(".post p:first");
+			
+			    var $numWords = $quote.text().split(" ").length;
+			
+			    if (($numWords >= 1) && ($numWords < 10)) {
+			        $quote.css("font-size", "36px");
+			    }
+			    else if (($numWords >= 10) && ($numWords < 20)) {
+			        $quote.css("font-size", "32px");
+			    }
+			    else if (($numWords >= 20) && ($numWords < 30)) {
+			        $quote.css("font-size", "28px");
+			    }
+			    else if (($numWords >= 30) && ($numWords < 40)) {
+			        $quote.css("font-size", "24px");
+			    }
+			    else {
+			        $quote.css("font-size", "20px");
+			   }   
+		
+		</script>
+		
+		<script type="text/javascript">
+		
+			$(document).ready(function() {
+			    $("#changeButton").click(function() {
+			    	$("#inputval").text($('input[name=userinput]').val());
+			    	
+			    	$('#sign').css("background-color", ($('select[name=bgcolor]').val()));
+			    	
+			    	var $textColor = $('select[name=bgcolor]').val();
+			    	
+			    	if ($textColor = "blue") {
+			    		$('#sign').css("color", "white");
+			    	}
+			    	else {
+			    		$('#sign').css("color", "black");
+			    	}
+			    });
+			});
+		
+		</script>
+		
+		<style>
+			#sign {
+				width: 500px;
+				height: 250px;
+				background-color: red;
+				font-size: 44px;
+				text-align: center;
+				}
+		</style>
+		
+	</head>
+	<body>
+		<h1>Sign Test</h1>
+		
+		<div id="sign">
+			<div class="post">
+				<div id="signText"><span id="inputval">This will get changed.</span></div>
+			</div><!--end post-->
+		</div><!--end sign-->
+		
+		<form>
+			Text: <input type="text" id="userinput" name="userinput" maxlength="30" />
+			Background color: <select name="bgcolor">
+				<option>Red</option>
+				<option>Blue</option>
+				<option>Green</option>
+			</select>
+			<input type="button" id="changeButton" value="Update" name="changeButton" />
+		</form>
+		
+	</body>
+</html>
